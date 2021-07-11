@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StorageFragment"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="104dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/filesListState0">
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_create_file_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListCreateFileButton"
+                    android:text="@string/button_create_file"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_create_folder_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListCreateFolderButton"
+                    android:text="@string/button_new_folder"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/filesListState1">
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_copy_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListCopyButton"
+                    android:text="@string/button_text_copy"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_move_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListMoveButton"
+                    android:text="@string/button_text_move"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_rename_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListRenameButton"
+                    android:text="@string/button_text_rename"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_delete_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListDeleteButton"
+                    android:text="@string/button_text_delete"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/filesListState2">
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_paste_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListPasteButton"
+                    android:text="@string/button_paste"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/files_list_cancel_button_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/filesListCancelButton"
+                    android:text="@string/button_cancel"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

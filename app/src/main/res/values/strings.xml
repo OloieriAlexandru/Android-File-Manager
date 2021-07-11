@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ProjectAFD</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_text_copy">Copy</string>
+    <string name="button_text_move">Move</string>
+    <string name="button_text_rename">Rename</string>
+    <string name="button_text_delete">Delete</string>
+    <string name="button_save">Save</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_back">Back</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_paste">Paste</string>
+    <string name="button_new_folder">New Folder</string>
+    <string name="button_create_file">New file</string>
+    <string name="sidebar_home_button">Home</string>
+    <string name="sidebar_main_storage_button">Main Storage</string>
+</resources>

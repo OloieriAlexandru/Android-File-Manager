@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.FileViewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText android:id="@+id/fileViewArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="4dp"
+            android:inputType="textMultiLine"
+
+            android:layout_marginBottom="104dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp"
+
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+
+            android:imeOptions="actionDone"
+            android:gravity="top|start"
+            android:background="@drawable/rectangle_background"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/file_view_reset_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/fileViewResetButton"
+                    android:text="@string/button_reset"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/file_view_save_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/fileViewSaveButton"
+                    android:text="@string/button_save"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/action_button_container_style">
+                <ImageView
+                    style="@style/action_button_image_style"
+                    android:src="@drawable/file_view_exit_icon" />
+
+                <Button
+                    style="@style/action_button_style"
+                    android:id="@+id/fileViewBackButton"
+                    android:text="@string/button_back"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home_item"
+        android:title="@string/sidebar_home_button"
+        android:icon="@drawable/sidebar_home"/>
+
+    <item
+        android:id="@+id/menu_main_storage_item"
+        android:title="@string/sidebar_main_storage_button"
+        android:icon="@drawable/home_main_storage"/>
+</menu>
